@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* body{
+    margin: 0%;
+    padding: 0px;
+} */
+body {
+    margin: 0;
+    line-height: inherit;
+    width: none;
+    /* position: relative; */
+
+
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        width: max-content; 
+    }
+  }
