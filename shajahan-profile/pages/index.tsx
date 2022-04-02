@@ -21,7 +21,7 @@ export default function Home() {
         <title>Shajahan Shaik</title>
       </Head>
 
-      <div className='bg-gradient-to-r from-indigo-100 via-purple-300  to-pink-100'>
+      <div className='sm:bg-gradient-to-r from-indigo-100 via-purple-300  to-pink-100'>
         <div className='z-40'>
           <Particles
             id="tsparticles"

@@ -10,12 +10,12 @@ body {
     line-height: inherit;
     width: none;
     /* position: relative; */
-
-
+    background-image: none;
 }
 
 @media screen and (max-width: 500px) {
     body {
         width: max-content; 
+        background-image: linear-gradient(#9baddb , #c4eee5,#ddb9d9);
     }
   }
