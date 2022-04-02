@@ -180,7 +180,7 @@ export default function ProfileHeader() {
                         <div className='space-y-2'>
                             <h1 className="text-4xl tracking-tight text-white text-center md:text-5xl lg:text-5xl">Shajahan Shaik</h1>
                             <h1 className="text-md tracking-tight text-white md:text-xl lg:text-xl text-center">(Software Developer)</h1>
-                            <div className="lg:flex lg:flex-row flex-col lg:divide-x-2 divide-x-0 text-white">
+                            <div className="flex flex-row lg:divide-x-2 divide-x-0 text-white">
                                 <p className="p-2 flex space-x-1"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg><span>shajahan.fsdev@gmail.com</span></p>
@@ -204,10 +204,10 @@ export default function ProfileHeader() {
                 <h2 className="sr-only" id="contact-heading">
                     Contact us
                 </h2>
-                {singlData == null ? <div className="grid grid-cols-1 gap-y-10 pl-6 pr-6 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8 ">
+                {singlData == null ? <div className="grid grid-cols-1 gap-y-14 px-10 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8 ">
                     {profileData.map((link) => (
                         <div key={link.name} className="flex flex-col bg-gradient-to-r from-cyan-700  to-cyan-400  text-white rounded-2xl shadow-xl">
-                            <div className="flex-1 relative pt-10 px-6 pb-4 md:px-8">
+                            <div className="flex-1 relative pt-10 px-6 pb-6 md:px-8">
                                 <div className='flex items-center space-x-2'>
                                     <div className="p-2 inline-block bg-white rounded-xl shadow-lg">
                                         <link.icon className="h-6 w-6 text-black" aria-hidden="true" />
@@ -220,8 +220,8 @@ export default function ProfileHeader() {
 
                                 <p className="mt-4 text-base ">{link.description}</p>
                             </div>
-                            <div className="p-3 bg-gray-200 rounded-bl-2xl rounded-br-2xl md:px-8">
-                                {showhide ? <a onClick={() => show(link?.id)} className="text-base cursor-pointer font-medium text-indigo-700 hover:text-indigo-600">
+                            <div className="sm:p-3 p-6 bg-gray-200 rounded-bl-2xl rounded-br-2xl md:px-8">
+                                {showhide ? <a onClick={() => show(link?.id)} className="sm:text-base text-xl  cursor-pointer font-medium text-indigo-700 hover:text-indigo-600">
                                     See More<span aria-hidden="true"> &rarr;</span>
                                 </a> :
                                     <a onClick={() => hide(link?.id)} className="text-base font-medium cursor-pointer text-indigo-700 hover:text-indigo-600">
@@ -243,11 +243,11 @@ export default function ProfileHeader() {
                                     {singlData.id == 2 ? <Qualification /> : null}
                                 </div>
                             </div>
-                            <div className="ml-2 p-2 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
+                            <div className="ml-2 sm:p-2 p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
                                 {showhide ? <a onClick={() => show(singlData?.id)} className="text-base cursor-pointer font-medium text-indigo-700 hover:text-indigo-600">
                                     See More<span aria-hidden="true"> &rarr;</span>
                                 </a> :
-                                    <a onClick={() => hide(singlData?.id)} className="text-base font-medium cursor-pointer text-indigo-700 hover:text-indigo-600">
+                                    <a onClick={() => hide(singlData?.id)} className="sm:text-base text-xl font-medium cursor-pointer text-indigo-700 hover:text-indigo-600">
                                         <span aria-hidden="true"> &larr;</span>Back
                                     </a>}
                             </div>
