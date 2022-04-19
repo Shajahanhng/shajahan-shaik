@@ -23,7 +23,7 @@ let data = {
         }],
     skills: [
         {
-            point: 'Good knowledge on Fornt-end and Back-end development of Web Applications.',
+            point: 'Good knowledge on Front-end and Back-end development of Web Applications.',
         },
         {
             point: 'Programming Languages Known, HTML, CSS, JavaScript, React, Next js, Angular, Tailwind CSS, Nest js, Express js and MongoDB.',
