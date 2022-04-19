@@ -14,12 +14,12 @@ let data = {
         {
             id: 1,
             name: 'HSC(Higher Secondary School Certificate)/ Intermediate from 2011 to 2013  (57%)',
-            content: 'My Intermediate completed in Priyadarshini Junior College. Located in Huzur Nagar, Suryapet District, Telangana.'
+            content: 'My Intermediate completed in Priyadarshini Junior College. Located in Huzur Nagar, Surypet District, Telangana.'
         },
         {
             id: 1,
             name: 'SSC(Secondary School Certificate) from 2010 to 2011  (62%)',
-            content: 'I did Schooling n Zilla Parishat High School. Located in Amaravaram Village, Suryapet District, Telangana.'
+            content: 'I did Schooling n Zilla Parishat High School. Located in Amaravaram Village, Surypet District, Telangana.'
         }],
     skills: [
         {
